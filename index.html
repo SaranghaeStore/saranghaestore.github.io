@@ -12,7 +12,7 @@
               font-family: 'Tangerine', serif;
         font-size: 60px;}
         h2 {color: rgb(15, 15, 15);}
-            p    {color: rgb(32, 248, 3);}
+            p    {color: rgb(248, 3, 175);}
             .gfg {
 				font-size:40px;
 				font-weight:bold;
@@ -34,10 +34,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1920px;
-  height: 105px;
+  width: 100%;
+  height: 100px;
+  
 }
-header {
+header {  
   background-color: rgb(230, 197, 222);
   color: rgb(230, 197, 222);
   
@@ -57,7 +58,7 @@ header {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-right: 5px;
   width: 200px;
 }
 
@@ -73,7 +74,40 @@ header {
 
 .search button[type="submit"]:hover {
   background-color: #ddd;
+}        
+.container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-gap: 20px; /* gap between products */
 }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .product img {
+          display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button-container {
+            text-align: center; /* Center-align the content */
+            margin-top: 50px;
+        }
+        .navigation-button { 
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
             </style>
 		<title>Saranghae</title>
         <link rel="icon" type="image/x-icon" href="icon.png">
@@ -96,7 +130,46 @@ header {
         </div>
       </nav>
     </header>
-		<h2>Products</h2>
+		<h2 style="text-align: center;">Products</h2>
+    <div class="container">
+      <!-- Product 1 -->
+      <div class="product">
+          <img src="https://m.media-amazon.com/images/I/71u3IlSgb5L._SX679_.jpg" alt="Product 1" height="235px" width="546px">
+          <img src="Untitled.png" height="235px" width="546px">
+          <h2><a href="https://amzn.to/49ZwEK8">Crucial Basics 8GB DDR4-3200 SODIMM</a></h2>
+          <p>The DDR4 RAM is rated at 1.2V and has a latency of CL19. It can operate at a max of 3200MT/s.</p>
+          <p>Price: ₹1,389</p>
+      </div>
+  
+      <!-- Product 2 -->
+      <div class="product">
+          <img src="https://m.media-amazon.com/images/I/716YH6YQw7L._SX679_.jpg" alt="Product 2" width="246px" height="391px">
+          <h2><a href="https://amzn.to/3TAbT1I">Industries 4 Shelf Closet Hanging Organizer, 4 Tier Closet Wardrobe Organizer Clothes Storage Hanger for Family Closet Bedroom, Foldable and Universal Fit (Brown)-KUBMART15323</a></h2>
+          <p>Hanging Organiser 4 Shelves, Wardrobe Hanging Storage, Storage Compartment for Closet</p>
+          <p>Price:  ₹289</p>
+      </div>
+  
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61UhO40cCNL._SX679_.jpg" alt="Product 3" width="373px" height="373px">
+        <h2><a href="https://amzn.to/4akVaVL">GR Art&Craft "Organize Your Space Closet Hanging Organizer, Closet Wardrobe Organizer Clothes Storage Hanger for Family Closet Bedroom, Foldable and Universal Fit (2 Shelf, Black)</a></h2>
+        <p>This Hanging Clothes Organizer is Made up of High Quality Non-Woven Fabric + Bamboo Charcoal.</p>
+        <p>Price:  ₹129</p>
+    </div>
+
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61ikKlGrsnL._SX679_.jpg" alt="Product 4" width="546px" height="546px">
+      <h2><a href="https://amzn.to/3IEba9x">Colgate Visible White O2, Teeth Whitening Toothpaste (50g)</a></h2>
+      <p>NOTICEABLY WHITER TEETH in 3 DAYS: Colgate Visible White O2’s Active Oxygen technology starts whitening your teeth in 3 days and offers you noticeably whiter teeth than ever before when used as directed on the pack.</p>
+      <p>Price:  ₹200</p>
+  </div>
+<div><h2>Go To Page.....</h2></div>
+    <div class="button-container">
+      <button class="navigation-button" onclick="window.location.href='index.html'">1</button>
+      <button class="navigation-button" onclick="window.location.href='1.html'">2</button>
+      <!---button class="navigation-button" onclick="window.location.href='services.html'">3</button>
+      <button class="navigation-button" onclick="window.location.href='contact.html'">4</button><-->
+  </div>
+  </div>
     </body>
         </div>
 </html>		
